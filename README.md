@@ -8,19 +8,16 @@ PCR. The resulting sgRNA pools were delivered by electroporation to HEK293T cell
 
 It includes two main components: 
 
-Preprocessing (preprocess.sh)
+Preprocessing (Clean.sh)
 Downloads SRA runs, builds 4 sample FASTQs, performs QC, alignment, and outputs gene transcription level.
 
-Analysis (lncRNAseq_analysis.Rmd)
+Analysis (Differential_expression.sh)
 Performs differential expression analysis using edgeR, generates PCA and volcano plots, and visualizes gene expression levels.
 
 Data
 
-SRA BioProject: PRJNA610861 
-BJ fibroblasts transduced with doxycycline inducible empty vector control retroviruses were grown in the absence
-or continued presence of doxycycline (20nm), and young-quiescent or senescent cells were collected for RNA-seq. 
-Senescent and young doxycycline treated samples were compared for changes in genes expression, and senescent and 
-young doxycycline untreated samples were compared separately.
+SRA BioProject: PRJNA174989
+The prognosis for lung adenocarcinoma (LUAD) remains dismal, with a 5-year survival rate of <20%. Therefore, the purpose of this study was to identify potentially reliable biomarkers in LUAD by machine learning combination with Mendelian randomization (MR).
 
 Sample 1: GSM8189964 (SRX24155225 Lane 1)
 cell line: ECC_1
@@ -59,7 +56,7 @@ Reference files:
 Transcript annotation: gencode.v16.annotation.gtf
 Alignment index: hg19
 Related publication:
-PMID: 100927
+PMID: 39364312
 
 Directory Output
 
