@@ -16,14 +16,14 @@ ans_q2 <- unname(libsize["T6hrCAFrep1"])+ unname(libsize["T6hrCAFrep2"])
 # q3: How many genes have nonzero counts in sample T0hrCAFrep1??
 ans_q3 <- sum(counts[, "T0hrCAFrep1"] > 0)
 
-# q4: Which gene is the 1st deregulated by log2 fold change (most upregulated) for MCF7 Ohr CAF rep1??
+# q4: How many genes are upregulated 2-fold (log2FC 1) in T0hrCAF vs. T0hrCAF with FDR < 0.01?
 res_df$SYMBOL <- rownames(res_df)
 up_rank <- res_df %>%
   dplyr::filter(!is.na(log2FoldChange) & log2FoldChange > 0) %>%
   dplyr::arrange(dplyr::desc(log2FoldChange), padj, pvalue)
 ans_q5 <- if (nrow(up_rank) >= 1) up_rank$SYMBOL[3] else NA_character_
 
-# q5: Which gene is the 2nd deregulated by log2 fold change (most upregulated) for MCF7 6hr CAF rep1?
+# q5: Which gene is ranked 3th by log2 fold change (most upregulated) in T0hrCAF vs. T6hrCAF?
 res_df$SYMBOL <- rownames(res_df)
 up_rank <- res_df %>%
   dplyr::filter(!is.na(log2FoldChange) & log2FoldChange > 0) %>%
