@@ -35,11 +35,11 @@ questions:\
 \
    - id: q4\
     stage: differential_expression\
-    text: "How many genes are upregulated \uc0\u8805 2-fold (log2FC \u8805  1) in T0hrCAFrep1 vs. T0hrCAFrep1 with FDR < 0.01?"\
+    text: "How many genes are upregulated \uc0\u8805 2-fold (log2FC \u8805  1) in T0hrCAF vs. T0hrCAF with FDR < 0.01?"\
     answer_type: integer_exact\
 \
   - id: q5\
     stage: differential_expression\
-    text: "Which gene is ranked 3th by log2 fold change (most upregulated) in T0hrCAFrep1 vs. T6hrCAFrep1?"\
+    text: "Which gene is ranked 3th by log2 fold change (most upregulated) in T0hrCAF vs. T6hrCAF?"\
     answer_type: string_exact}
 \
