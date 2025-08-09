@@ -4,17 +4,17 @@ Answers to questions path, please run full script succesfully first to run those
 # ---- Answers for q1..q5 ----
 # Requires objects 'counts', 'dds', and 'res' created above
 
-# q1: How many sequencing lanes were concatenated to form sample MCF7 6hr rep1?
+# q1: How many sequencing lanes were concatenated to form sample T0hrrep1??
 # If you later generate a manifest upstream, read it here instead of hardcoding
-sample_lanes <- c(ECC1_L1 = 2L, ECC1_L2 = 2L, H460_L1 = 2L, H460_L2 = 2L, ECC1_L1 = 2L, ECC1_L2 = 2L, PC-3_L1= 2L, PC-3_L2= 2L, PC_3_L1_siD= 2L, PC_3_L2_sid= 2L)
+sample_lanes <- c(T0hrrep1 = 2L, T0hrrep2 = 2L, T0hrCAFrep1 = 2L, T0hrCAFrep2 = 2L, T6hrrep1 = 2L, T6hrrep2 = 2L, T6hrCAFrep1 = 2L, T6hrCAFrep2 = 2L)
 ans_q1 <- unname(sample_lanes["ym"])
 
-# q2: What is the library size (total read counts) for MCF7 6hr rep1?
+# q2: What is the library size (total read counts) for T6hrrep1??
 libsize <- colSums(counts)
-ans_q2 <- unname(libsize["H460_L1"])+ unname(libsize["H460_L2"])
+ans_q2 <- unname(libsize["T6hrCAFrep1"])+ unname(libsize["T6hrCAFrep2"])
 
-# q3: How many genes have nonzero counts in sample MCF7 Ohr CAF rep1?
-ans_q3 <- sum(counts[, "ym"] > 0)
+# q3: How many genes have nonzero counts in sample T0hrCAFrep1??
+ans_q3 <- sum(counts[, "T0hrCAFrep1"] > 0)
 
 # q4: Which gene is the 1st deregulated by log2 fold change (most upregulated) for MCF7 Ohr CAF rep1??
 res_df$SYMBOL <- rownames(res_df)
