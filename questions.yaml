@@ -40,6 +40,6 @@ questions:\
 \
   - id: q5\
     stage: differential_expression\
-    text: "Which gene is ranked 3th by log2 fold change (most upregulated) in T6hrCAFrep1 vs. T6hrCAFrep1?"\
+    text: "Which gene is ranked 3th by log2 fold change (most upregulated) in T0hrCAFrep1 vs. T6hrCAFrep1?"\
     answer_type: string_exact}
 \
