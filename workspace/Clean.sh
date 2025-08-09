@@ -70,7 +70,7 @@ mdkir -p $GENOMEDIR/STAR
 STAR --runThreadN 23 --runMode genomeGenerate --genomeDir $GENOMEDIR/STAR --genomeFastaFiles $GENOMEDIR/GRCh38.primary_assembly.genome.fa --sjdbGTFfile $GENOMEDIR/gencode.v29.primary_assembly.annotation.gtf
 cd ../trimmed
 STAR --genomeDir indexes/chr10 \
-      --readFilesIn T0hrrep1.fastq.gzv T0hrrep2.fastq.gz T0hrCAFrep1.fastq.gz T0hrCAFrep2.fastq.gz T6hrrep1.fastq.gzv T6hrrep2.fastq.gz T6hrCAFrep1.fastq.gz T6hrCAFrep2.fastq.gz \
+      --readFilesIn T0hrrep1.fastq.gzv T0hrrep2.fastq.gz T0hrCAFrep1.fastq.gz T0hrCAFrep2.fastq.gz T6hrrep1.fastq.gzv T6hrrep2.fastq.gz T6hrCAFrep1.fastq.gz T6hrCAFrep2.fastq.gz  \
       --readFilesCommand zcat \
       --outSAMtype BAM SortedByCoordinate \
       --quantMode GeneCounts \
