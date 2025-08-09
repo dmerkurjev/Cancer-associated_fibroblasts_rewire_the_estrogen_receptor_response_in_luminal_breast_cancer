@@ -3,7 +3,7 @@ library(limma)
 library(umap)
 
 # load series and platform data from GEO
-gset <- getGEO("GSE263343", GSEMatrix =TRUE, AnnotGPL=TRUE)[[1]]
+gset <- getGEO("GSE251644", GSEMatrix =TRUE, AnnotGPL=TRUE)[[1]]
 
 # make proper column names to match toptable 
 fvarLabels(gset) <- make.names(fvarLabels(gset))
@@ -83,13 +83,13 @@ ord <- order(gs)  # order samples by group
 palette(c("#1B9E77", "#7570B3", "#E7298A", "#E6AB02", "#D95F02",
           "#66A61E", "#A6761D", "#B32424", "#B324B3", "#666666"))
 par(mar=c(7,4,2,1))
-title <- paste ("GSE263343", "/", annotation(gset), sep ="")
+title <- paste ("GSE251644", "/", annotation(gset), sep ="")
 boxplot(ex[,ord], boxwex=0.6, notch=T, main=title, outline=FALSE, las=2, col=gs[ord])
 legend("topleft", groups, fill=palette(), bty="n")
 
 # expression value distribution
 par(mar=c(4,4,2,1))
-title <- paste ("GSE263343", "/", annotation(gset), " value distribution", sep ="")
+title <- paste ("GSE251644", "/", annotation(gset), " value distribution", sep ="")
 plotDensities(ex, group=gs, main=title, legend ="topright")
 
 # UMAP plot (dimensionality reduction)
