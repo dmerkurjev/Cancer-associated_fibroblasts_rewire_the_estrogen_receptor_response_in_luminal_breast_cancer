@@ -104,4 +104,4 @@ library("maptools")  # point labels without overlaps
 pointLabel(ump$layout, labels = rownames(ump$layout), method="SANN", cex=0.6)
 
 # mean-variance trend, helps to see if precision weights are needed
-plotSA(fit2, main="Mean variance trend, GSE146573")
+plotSA(fit2, main="Mean variance trend, GSE251644")
