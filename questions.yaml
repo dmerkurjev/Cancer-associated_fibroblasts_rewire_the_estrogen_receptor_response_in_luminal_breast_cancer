@@ -7,7 +7,7 @@
 
 \f0\fs24 \cf0 task: >\
   RNA-seq analysis of lncRNAs results in tight lncRNA–target couplings \
-  (8 samples: siRNA_ECC-1_NT_Rep1_L1, siRNA_ECC-1_NT_Rep1_L2, siRNA_NCI-H460_NT_Rep1_L1, siRNA_NCI-H460_NT_Rep1_L2, siRNA_PC-3_NT_Rep1_L1, siRNA_PC-3_NT_Rep1_L2, siRNA_PC-3_siDICER1_Rep1_L1, siRNA_PC-3_siDICER1_Rep1_L2). Using the provided FASTQs\
+  (8 samples: T0hrrep1, T0hrrep2, T0hrCAFrep1, T0hrCAFrep2, T6hrrep1, T6hrrep2, T6hrCAFrep1, T6hrCAFrep2). Using the provided FASTQs\
   and the following pipeline (Trimmomatic 
 \f1 \uc0\u8594 
 \f0  STAR
@@ -20,26 +20,26 @@
 questions:\
   - id: q1\
     stage: read_processing\
-    text: "How many sequencing lanes were concatenated to form sample siRNA_ECC-1_NT_Rep1?"\
+    text: "How many sequencing lanes were concatenated to form sample T0hrrep1?"\
     answer_type: integer_exact\
 \
   - id: q2\
     stage: quality_control\
-    text: "What is the library size (total read counts) for siRNA_NCI-H460_NT_Rep1?"\
+    text: "What is the library size (total read counts) for T6hrrep1?"\
     answer_type: integer_exact\
 \
   - id: q3\
     stage: quantification\
-    text: "How many genes have nonzero counts in sample siRNA_PC-3_siDICER1_Rep1_L1?"\
+    text: "How many genes have nonzero counts in sample T0hrCAFrep1?"\
     answer_type: integer_exact\
 \
-  - id: q4\
+      - id: q4\
     stage: differential_expression\
-    text: "Which gene is the 2nd deregulated by log2 fold change (most upregulated) for ECC-1?"\
+    text: "How many genes are upregulated \uc0\u8805 2-fold (log2FC \u8805  1) in T0hrCAFrep1 vs. T0hrCAFrep1 with FDR < 0.01?"\
     answer_type: integer_exact\
 \
   - id: q5\
     stage: differential_expression\
-    text: "Which gene is the 4th deregulated by log2 fold change (most upregulated) for PC-3?"\
+    text: "Which gene is ranked 3th by log2 fold change (most upregulated) in T6hrCAFrep1 vs. T6hrCAFrep1?"\
     answer_type: string_exact}
 \
