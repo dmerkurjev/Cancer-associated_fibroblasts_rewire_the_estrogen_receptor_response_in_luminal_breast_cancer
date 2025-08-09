@@ -1,4 +1,4 @@
-To download the fastq files:
+To download the data:
 
 wget https://sra-downloadb.be-md.ncbi.nlm.nih.gov/sos8/sra-pub-zq-818/SRR028/28555/SRR28555713/SRR28555713.lite.1 # SRX24155225: siRNA_ECC-1_NT_Rep1_L1
 
