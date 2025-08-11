@@ -15,3 +15,5 @@ wget https://sra-downloadb.be-md.ncbi.nlm.nih.gov/sos8/sra-pub-zq-818/SRR028/285
 wget https://sra-downloadb.be-md.ncbi.nlm.nih.gov/sos8/sra-pub-zq-818/SRR028/28555/SRR28555757/SRR28555757.lite.1 # SRX22974829: RNA-Seq 6hr CAF 48hr rep1
 
 wget https://sra-downloadb.be-md.ncbi.nlm.nih.gov/sos8/sra-pub-zq-818/SRR028/28555/SRR28555756/SRR28555756.lite.1 # SRX22974830: RNA-Seq 6hr CAF 48hr rep2
+
+fastq-dump --split-files *lite.1 # convert to fastq
