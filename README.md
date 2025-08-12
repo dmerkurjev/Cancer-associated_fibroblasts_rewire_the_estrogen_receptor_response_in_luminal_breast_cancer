@@ -6,10 +6,10 @@ This is an analysis of a gene expression profiling (RNA-seq) and differentail ge
 It includes two main components: 
 
 Preprocessing (Clean.sh)
-Downloads SRA runs, builds 4 sample FASTQs, performs QC, alignment, and outputs gene transcription level.
+Downloads SRA runs, builds 8 sample FASTQs, performs QC, alignment, and outputs gene transcription level.
 
 Analysis (Differential_expression.sh)
-Performs differential expression analysis using edgeR, generates PCA and volcano plots, and visualizes gene expression levels.
+Performs differential expression analysis using edgeR.
 
 Data
 
