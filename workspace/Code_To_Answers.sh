@@ -11,9 +11,9 @@ ans_q1 <- unname(sample_lanes["ym"])
 
 # q2: What is the library size (total read counts) for T6hrrep1??
 libsize <- colSums(counts)
-ans_q2 <- unname(libsize["T6hrCAFrep1"])+ unname(libsize["T6hrCAFrep2"])
+ans_q2 <- unname(libsize["T6hrCAFrep1"])+ unname(libsize["T6hrCAFrep1"])
 
-# q3: How many genes have nonzero counts in sample T0hrCAFrep1??
+# q3: How many genes have nonzero counts in sample T0hrCAFrep1?
 ans_q3 <- sum(counts[, "T0hrCAFrep1"] > 0)
 
 # q4: How many genes are upregulated 2-fold (log2FC 1) in T0hrCAF vs. T0hrCAF with FDR < 0.01?
