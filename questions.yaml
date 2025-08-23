@@ -6,7 +6,7 @@
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
 \f0\fs24 \cf0 task: >\
-  RNA-seq analysis of lncRNAs results in tight lncRNA–target couplings \
+    RNA-seq analysis of cancer-related fibroblasts \
   (8 samples: T0hrrep1, T0hrrep2, T0hrCAFrep1, T0hrCAFrep2, T6hrrep1, T6hrrep2, T6hrCAFrep1, T6hrCAFrep2). Using the provided FASTQs\
   and the following pipeline (Trimmomatic 
 \f1 \uc0\u8594 
