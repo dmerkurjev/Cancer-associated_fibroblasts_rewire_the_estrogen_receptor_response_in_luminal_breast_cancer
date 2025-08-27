@@ -53,5 +53,5 @@ paths:\
   logs: logs/\
   qc: qc/\
   reference:\
-    HISAT2_index: HISAT2_index/hg38/genome\
+    STAR_index: STAR_index/hg38/genome\
     annotation_gtf: gencode.v29.annotation.gtf\
