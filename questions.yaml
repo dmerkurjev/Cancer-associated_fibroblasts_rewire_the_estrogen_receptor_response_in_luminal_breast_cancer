@@ -20,12 +20,12 @@
 questions:\
   - id: q1\
     stage: read_processing\
-    text: "How many replicates form sample T0hrrep1?"\
+    text: "8k clk,"\
     answer_type: integer_exact\
 \
   - id: q2\
     stage: quality_control\
-    text: "Which samples have the highest read count?"\
+    text: "Which sample has the highest read count?"\
     answer_type: string_exact\
 \
   - id: q3\
