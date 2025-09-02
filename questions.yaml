@@ -20,7 +20,7 @@
 questions:\
   - id: q1\
     stage: read_processing\
-    text: "8k clk,"\
+    text: "How many replicates does T0hrCAFrep2 have?"\
     answer_type: integer_exact\
 \
   - id: q2\
