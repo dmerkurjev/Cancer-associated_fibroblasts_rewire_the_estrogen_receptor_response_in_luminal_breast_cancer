@@ -4,16 +4,16 @@ Answers to questions path, please run full script succesfully first to run those
 # ---- Answers for q1..q5 ----
 # Requires objects 'counts', 'dds', and 'res' created above
 
-# q1: How many sequencing lanes were concatenated to form sample T0hrrep1??
+# q1: How many replicates does T0hrCAFrep2 have?
 # If you later generate a manifest upstream, read it here instead of hardcoding
 sample_lanes <- c(T0hrrep1 = 2L, T0hrrep2 = 2L, T0hrCAFrep1 = 2L, T0hrCAFrep2 = 2L, T6hrrep1 = 2L, T6hrrep2 = 2L, T6hrCAFrep1 = 2L, T6hrCAFrep2 = 2L)
 ans_q1 <- unname(sample_lanes["ym"])
 
-# q2: What is the library size (total read counts) for T6hrrep1??
+# q2: Which sample has the highest read count?
 libsize <- colSums(counts)
 ans_q2 <- unname(libsize["T6hrCAFrep1"])+ unname(libsize["T6hrCAFrep1"])
 
-# q3: How many genes have nonzero counts in sample T0hrCAFrep1?
+# q3: How many genes have counts>5 in sample T0hrCAFrep1?
 ans_q3 <- sum(counts[, "T0hrCAFrep1"] > 0)
 
 # q4: How many genes are upregulated 2-fold (log2FC 1) in T0hrCAF vs. T0hrCAF with FDR < 0.01?
