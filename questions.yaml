@@ -25,7 +25,7 @@ questions:\
 \
   - id: q2\
     stage: quality_control\
-    text: "Which sample has the highest read count?"\
+    text: "Which sample has the highest read count, T6hrCAFrep1 or T6hrCAFrep2?"\
     answer_type: string_exact\
 \
   - id: q3\
