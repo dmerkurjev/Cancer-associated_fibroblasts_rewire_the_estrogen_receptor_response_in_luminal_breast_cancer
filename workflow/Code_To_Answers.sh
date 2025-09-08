@@ -9,7 +9,7 @@ Answers to questions path, please run full script succesfully first to run those
 sample_lanes <- c(T0hrrep1 = 2L, T0hrrep2 = 2L, T0hrCAFrep1 = 2L, T0hrCAFrep2 = 2L, T6hrrep1 = 2L, T6hrrep2 = 2L, T6hrCAFrep1 = 2L, T6hrCAFrep2 = 2L)
 ans_q1 <- unname(sample_lanes["ym"])
 
-# q2: Which sample has the highest read count T6hrCAFrep1 or T6hrCAFrep2?
+# q2: Which sample has the highest read count, T6hrCAFrep1 or T6hrCAFrep2?
 libsize <- colSums(counts)
 if (libsize["T6hrCAFrep1"])> unname(libsize["T6hrCAFrep2"]) print "T6hrCAFrep1"
 if (libsize["T6hrCAFrep2"])> unname(libsize["T6hrCAFrep1"]) print "T6hrCAFrep2"
